@@ -26,5 +26,5 @@ tasks:
     code: |
       set -e
       #sudo apk add cmake g++
-      sudo apt-get install -y build-essential cmake clang
+      sudo apt-get install -y g++ cmake
     
