@@ -26,7 +26,7 @@ tasks:
     code: |
       set -e
       #sudo apk add cmake g++
-      cat << HERE 'Package: *' | sudo tee  > /etc/apt/preferences/unstable.pref
+      cat << HERE 'Package: *' | sudo tee  > /etc/apt/preferences.d/unstable.pref
       Package: *
       Pin: release o=Debian,a=unstable
       Pin-Priority: 10
