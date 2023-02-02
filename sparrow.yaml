@@ -11,8 +11,6 @@ tasks:
       set -e
       cd source/
 
-      alias gcc="/usr/bin/gcc-12"
-      
       zef --version
       raku --version
       which gcc
