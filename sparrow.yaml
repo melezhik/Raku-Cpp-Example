@@ -26,11 +26,12 @@ tasks:
     code: |
       set -e
       #sudo apk add cmake g++
-      cat << HERE 'Package: *' | sudo tee  > /etc/apt/preferences.d/unstable.pref
+      cat << HERE | sudo tee  /etc/apt/preferences.d/unstable.pref
       Package: *
       Pin: release o=Debian,a=unstable
       Pin-Priority: 10
       HERE
+      
       sudo apt-get update
       sudo apt-get install -y gcc-12
       
