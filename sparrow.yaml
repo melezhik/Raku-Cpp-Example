@@ -30,8 +30,8 @@ tasks:
       deb http://http.us.debian.org/debian/ testing non-free contrib main
       HERE
       
-      sudo apt-get update
-      sudo apt-get install -y gcc-12
+      sudo apt-get update 
+      sudo apt-get install -y gcc-12 cmake
       
 
 
