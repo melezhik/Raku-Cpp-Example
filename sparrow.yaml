@@ -25,11 +25,9 @@ tasks:
     language: Bash
     code: |
       set -e
-      #sudo apk add cmake g++
-      cat << HERE | sudo tee  /etc/apt/preferences.d/unstable.pref
-      Package: *
-      Pin: release o=Debian,a=unstable
-      Pin-Priority: 10
+      
+      cat << HERE | sudo tee  /etc/apt/sources.list.d/unstable.list
+      deb http://http.us.debian.org/debian/ testing non-free contrib main
       HERE
       
       sudo apt-get update
